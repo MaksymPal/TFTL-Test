@@ -34,9 +34,9 @@ window.onload = function () {
         cursor.style.opacity = '1';
     });
 
-    menuLink.addEventListener('click', () => {
+    menuLink.addEventListener('touchend', () => {
         navigation.classList.toggle('navigation--active');
-        this.classList.toggle('menu-icon--active');
+        menuLink.classList.toggle('menu-icon--active');
     });
 
     let mySwiper = new Swiper (swiper, {
